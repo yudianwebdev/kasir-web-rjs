@@ -1,0 +1,13 @@
+.MenuBtn {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+#MenuBtn:hover {
+  background-color: red;
+  border-radius: 4px;
+}
+
+#MenuBtn:active {
+  background-color: blue;
+  border-radius: 4px;
+}
