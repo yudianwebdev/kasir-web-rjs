@@ -3,11 +3,12 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import Dragpage from "./pages/dragpage";
 // import SignIn from "./pages/auth/signin";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Dragpage />
     {/* <SignIn /> */}
   </React.StrictMode>,
   document.getElementById("root")
