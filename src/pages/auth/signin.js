@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import InputBasic from "../../componets/inputForm/InputBasic";
 import WebLayoute from "../../componets/layoute/WebLayout";
+import MenuDrag from "../../componets/menu/MenuDrag";
 
 function SignIn() {
   function tes() {
@@ -48,6 +49,7 @@ function SignIn() {
   }, []);
   return (
     <WebLayoute>
+      <MenuDrag />
       <p>ini halaman signin</p>
       <InputBasic />
       <Link to="/about">

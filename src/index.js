@@ -8,7 +8,7 @@ import Dragpage from "./pages/dragpage";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Dragpage />
+    <App />
     {/* <SignIn /> */}
   </React.StrictMode>,
   document.getElementById("root")

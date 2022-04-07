@@ -8,8 +8,60 @@ body,
   height: 100%;
 }
 
+.nav {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  /* left: 10px; */
+  width: 80px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+}
+
+.nav .toggel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-45deg);
+  background-color: violet;
+}
+
 .container {
   max-width: calc(1280px - (96px * 2));
+}
+
+.toggel .IndukBtn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  z-index: 100;
+  cursor: pointer;
+  transform: rotate(-225deg);
+  transition: all 0.6s ease;
+}
+.menuchild p {
+  transform: rotate(calc(var(--i) * (360deg / -8) + 45deg));
+}
+.toggel .menuchild {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  position: absolute;
+  transition: all 0.6s ease;
+  opacity: 0;
+}
+.open .toggel .menuchild {
+  transform: rotate(calc(var(--i) * (360deg / 8))) translateY(120px);
+  opacity: 1;
 }
 
 .paragraph {
